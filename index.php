@@ -60,7 +60,7 @@ if ($modus == 1){
   $search = "32";
 }
 
-$unsorted_list = array('linear');
+$unsorted_list = array('linear', 'bfs');
 
 $start = microtime();
 echo "Start Process: ".$start."<br>\n";
