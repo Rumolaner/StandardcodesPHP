@@ -14,7 +14,7 @@ function interpol($list, $search){
     echo "High-Low: ".($high-$low)."<br>\n";
     echo "Search - Liste[low]: ".($search-$list[$low])."<br>\n";
     echo "Liste[high] - List[low]: ".($list[$high]-$list[$low])."<br>\n";
-    $pos = $low += ($high - $low) * ($search - $list[$low]) / ($list[$high] - $list[$low]);
+    $pos = $low + ($high - $low) * ($search - $list[$low]) / ($list[$high] - $list[$low]);
 
     echo "Pos: ".$pos." ".$list[$pos]."<br>\n";
     if ($list[$pos] == $search){
